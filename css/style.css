@@ -22,10 +22,42 @@
 /*******************************************/
 
 body {
+     
+}
+
+.wrapper {
+     
+     
+}
+
+.flex-parent {
+     display: flex;
+     justify-content: center;
+     align-items: center;     
+     flex-direction: column;
+  
+    
+}
+
+.eingabefeld {
+     max-width: 10rem;
+     text-align: right;
+     margin: 0.5em 0
+}
+
+.flex-child {
+  width: 25vw;
 
 }
 
+.gegeben, .zuBezahlen {
+     text-align: right;   
 
+}
+
+.ausgabe span {
+     margin-left: 2em;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
