@@ -13,6 +13,12 @@
      height: 0;
 }
 
+.row {
+     
+     max-width:25vw;
+     margin: 0 auto;
+}
+
 .clear {
 	clear: both;
 }
@@ -22,19 +28,20 @@
 /*******************************************/
 
 body {
-     
+    
 }
 
-.wrapper {
-     
-     
-}
 
 .flex-parent {
      display: flex;
      justify-content: center;
-     align-items: center;     
+     align-items: center;
+
      flex-direction: column;
+     
+
+         
+     
   
     
 }
@@ -46,7 +53,9 @@ body {
 }
 
 .flex-child {
-  width: 25vw;
+  width: 50%;
+  margin: 20px;
+
 
 }
 
