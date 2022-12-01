@@ -16,7 +16,23 @@ document.querySelector('#schein100').addEventListener('click',clickedSchein100)
 document.getElementById('berechnen').addEventListener('click', berechneWecselgeld)
 document.getElementById('reset').addEventListener('click', reset)
 
+
+
+let counter3=0
+let sum3=0
+
+let counter5=0
+let sum5=0
+
+let counter4=0
+let sum4=0
+
+let counter7=0
+let sum7=0
+
+
 function reset(){
+  console.log(counter3)
   document.getElementById('rückgeld').innerText = ""
   document.getElementById("neuesRückgeld").innerText = ""
   document.getElementById('kleingeld').innerText = ""
@@ -26,6 +42,16 @@ function reset(){
   document.getElementById('counter4').innerHTML = ""
   document.getElementById('counter5').innerHTML = ""
   document.getElementById('counter7').innerHTML = ""
+
+  counter3=0;
+  counter4=0;
+  counter5=0;
+  counter7=0;
+  
+  sum3=0;
+  sum4=0;
+  sum5=0;
+  sum7=0; 
 
 }
 
@@ -70,8 +96,7 @@ function clickedPreis3() {
   addPreis(3)
   add3Count()
 }
-let counter3=0
-let sum3=0
+
 function add3Count() {
   counter3+=1
   sum3=3*counter3
@@ -82,8 +107,7 @@ function clickedPreis4() {
   addPreis(4)
   add4Count()
 }
-let counter4=0
-let sum4=0
+
 function add4Count() {
   counter4+=1
   sum4=4*counter4
@@ -95,8 +119,8 @@ function clickedPreis5() {
   add5Count()
 }
 
-let counter5=0
-let sum5=0
+
+
 function add5Count() {
   counter5+=1
   sum5=5*counter5
@@ -107,8 +131,7 @@ function clickedPreis7() {
   add7Count()
 }
 
-let counter7=0
-let sum7=0
+
 function add7Count() {
   counter7+=1
   sum7=7*counter7
